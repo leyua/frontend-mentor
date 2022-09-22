@@ -21,7 +21,6 @@ section {
     width: 54rem;
     align-self: center;
     display: flex;
-    justify-content: center;
 }
 
 section article {
@@ -104,20 +103,27 @@ section article.luxury button:hover {
 }
 
 @media screen and (max-width: 375px) {
+    body {
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
     section {
         width: 80vw;
         flex-direction: column;
-        position: absolute;
-        top: 5rem;
+        align-items: center;
+        margin: 3rem 0;
     }
     section article.sedans {
         border-radius: 0.5rem 0.5rem 0 0;
     }
     section article.luxury {
         border-radius: 0 0 0.5rem 0.5rem;
-        margin-bottom: 5rem;
     }
     .attribution {
-        display: none;
+        position: static;
+        width: 10rem;
+        padding-bottom: 1.5rem;
+        text-align: center;
     }
 }

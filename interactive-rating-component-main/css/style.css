@@ -43,7 +43,7 @@ main section {
 main section h2 {
     font-weight: 700;
     color: var(--white);
-    line-height: 3rem;
+    line-height: 2.5rem;
 }
 main section p {
     color: var(--medium-grey);
@@ -52,7 +52,7 @@ main section p {
     padding: 0.7rem 0;
 }
 
-/*rating*/
+/*rating state*/
 main #rating img {
     padding: 0.9rem;
     border-radius: 50%;
@@ -96,4 +96,30 @@ main #rating .score button.checked {
 main #rating .submit:hover {
     color: var(--orange);
     background-color: var(--white);
+}
+
+/*thank you state*/
+main #thanks {
+    text-align: center;
+}
+main #thanks img {
+    margin-top: 1rem;
+}
+main #thanks .result {
+    background-color: var(--dark-blue);
+    color: var(--orange);
+    opacity: 0.8;
+    margin: 2rem 5rem;
+    padding: 0.5rem 0 0.3rem 0;
+    border-radius: 3rem;
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        width: 90vw;
+        padding: 1.5rem;
+    }
+    main #rating .score button {
+        padding: 0.7rem 1rem;
+    }
 }

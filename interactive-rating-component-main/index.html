@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- displays site properly based on user's device -->
 
         <link
             rel="icon"
@@ -18,8 +17,7 @@
     </head>
     <body>
         <main>
-            <section id="rating" class="hidden">
-                <!-- Rating state start -->
+            <section id="rating">
                 <img src="images/icon-star.svg" alt="star icon" />
                 <h2>How did we do?</h2>
                 <p>
@@ -34,17 +32,15 @@
                     <button>5</button>
                 </div>
                 <button class="submit">Submit</button>
-                <!-- Rating state end -->
             </section>
-            <section>
-                <!-- Thank you state start -->
+            <section id="thanks" class="hidden">
                 <img
                     src="images/illustration-thank-you.svg"
                     alt="thank you image"
                 />
                 <div class="result">
                     You selected
-                    <!-- Add rating here -->
+                    <span></span>
                     out of 5
                 </div>
                 <h2>Thank you!</h2>
@@ -52,8 +48,6 @@
                     We appreciate you taking the time to give a rating. If you
                     ever need more support, don’t hesitate to get in touch!
                 </p>
-
-                <!-- Thank you state end -->
             </section>
         </main>
     </body>

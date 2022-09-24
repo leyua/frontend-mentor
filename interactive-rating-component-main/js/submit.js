@@ -7,6 +7,7 @@ submit.onclick = () => {
     for (let el of sections) {
         el.classList.toggle("hidden");
     }
+    document.querySelector(".result > span").innerText = score;
 };
 
 for (let el of scores) {

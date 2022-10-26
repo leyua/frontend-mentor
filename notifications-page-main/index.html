@@ -3,8 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- displays site properly based on user's device -->
-
         <link
             rel="icon"
             type="image/png"
@@ -12,7 +10,7 @@
             href="./images/favicon-32x32.png"
         />
         <link rel="stylesheet" href="style.css" />
-
+        <script defer src="mark.js"></script>
         <title>Frontend Mentor | Notifications page</title>
     </head>
     <body>
@@ -28,6 +26,7 @@
                     <a href="#;" class="name">Mark Webber</a>
                     &nbsp;reacted to your recent post&nbsp;
                     <a href="#;">My first tournament today!</a>
+                    <div class="round"></div>
                     <br /><span class="time">1m ago</span>
                 </div>
             </article>
@@ -36,6 +35,7 @@
                 <div>
                     <a href="#;" class="name">Angela Gray</a>
                     &nbsp;followed you
+                    <div class="round"></div>
                     <br /><span class="time">5m ago</span>
                 </div>
             </article>
@@ -44,7 +44,8 @@
                 <div>
                     <a href="#;" class="name">Jacob Thompson</a>
                     &nbsp;has joined your group&nbsp;
-                    <a href="#;">Chess Club</a>
+                    <a href="#;" class="club">Chess Club</a>
+                    <div class="round"></div>
                     <br /><span class="time">1 day ago</span>
                 </div>
             </article>
@@ -83,10 +84,9 @@
                 <img src="assets/images/avatar-anna-kim.webp" alt="" />
                 <div>
                     <a href="#;" class="name">Anna Kim</a>
-                    &nbsp;left the group <a href="#;">Chess Club</a> <br /><span
-                        class="time"
-                        >2 week ago</span
-                    >
+                    &nbsp;left the group&nbsp;
+                    <a href="#;" class="club">Chess Club</a>
+                    <br /><span class="time">2 week ago</span>
                 </div>
             </article>
         </main>
